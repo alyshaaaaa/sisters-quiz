@@ -25,7 +25,7 @@ with open(html_mobile_file, "w", encoding="utf-8") as f:
     f.write(mobile_friendly_html)
 
 # Zip the mobile version
-zip_mobile_path = "/mnt/data/姜家姊妹心理測驗_10題_無音樂_手機版.zip"
+zip_mobile_path = "/mnt/data/女女女女女心理測驗_10題.zip"
 with zipfile.ZipFile(zip_mobile_path, 'w') as zipf:
     for foldername, subfolders, filenames in os.walk(mobile_html_path):
         for filename in filenames:
