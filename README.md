@@ -1,6 +1,11 @@
 # sisters-quiz
 # Rebuild with full 10-question content and background music, including revised subtitle
-
+ "<body>",
+    """<body>
+<audio id="bg-music" autoplay loop>
+  <source src="https://youtu.be/aLuShQwNYRE?si=l9t621xmndiyFzGx" type="audio/mpeg">
+</audio>
+<button class="toggle-music" onclick="toggleMusic()">🔊 音樂開關</button>
 html_with_questions = html_content.replace(
     "const questions = [ ... ];",
     """
